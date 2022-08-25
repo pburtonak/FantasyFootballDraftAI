@@ -86,3 +86,5 @@ In addition, adding NLP and scraping twitter for recent tweets on players could 
 ## Conclusion
 
 Our model is a useful tool for fantasy football players. It provides a way to predict PPR fantasy performance in a way that accounts for 52% of the variation in seasonal PPR performance. However, it must be taken with a grain of salt, since we don’t model every metric, and don’t have the most recent team news in the model. The best way to use the model is to highlight differences between the current fantasy rankings, and the model's rankings of players. If the ranking difference is likely because of recent news that our model hasn’t factored in, it is better to trust the consensus. However, in cases where there is not an additional factor to consider, the model can highlight players that might be undervalued or overvalued by the current fantasy rankings.
+
+If you are interested in digging deeper into the project, feel free to check out my [Notebook](https://github.com/pburtonak/FantasyFootballDraftAI/blob/main/FinalNotebook.ipynb)
