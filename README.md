@@ -42,13 +42,13 @@ I one hot encoded team and position, and will do something similar with age. Sin
 Our Dummy model simple predicts the average fantasy point score of 89.2 for each player
 I applied a grid search to a linear regression model with L1 regulization,  KNN, Random forest, and XGBoost models. Lasso proved to be an effective technique with our data since it is a method that helps reduce the dimensionality of our data. Since we have a lot of statistical data that is correlated, Lasso regression will allow us to deal with multicollinearity.
 
-![Models](./Images/ModelPerformance.png)
+![image](./Images/ModelPerformance.png)
 
 Based on our different Model performance we are selecting the Lasso Linear Regression Model as our final model. Let’s examine our residuals for that model as well. 
 
-![Residuals1](./Images/ Residuals1.png)
+![image](./Images/Residuals1.png)
 
-![Residuals2](./Images/ Residuals2.png)
+![image](./Images/Residuals2.png)
 
 Or final model has an r-squared score of 0.546 on the training data, and 0.52 on the test data. In other words, just over half of the variance in a Fantasy Football players scoring in a season can be explained by our model. Although initially this doesn’t seem great, there are a number of high variance events that are very difficult to explain. For example, a healthy player may score 250 fantasy points in a season, and then due to a nagging hamstring injury that we have no data on, may drop to half of that the next season. Injury is the largest introducer of variance in our system that is unaddressed by the model, but there are many others, such as coaching staff changes, contract negotiations, off-field behavioral issues, etc.
 
